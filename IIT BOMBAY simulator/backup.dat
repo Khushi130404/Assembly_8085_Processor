@@ -1,4 +1,4 @@
-false
+true
 # BEGIN 0000H
 	LHLD C050
 	XCHG
