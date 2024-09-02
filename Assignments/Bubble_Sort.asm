@@ -1,30 +1,24 @@
-false
 # BEGIN 0000H
 	   LXI H,C050
 	   MVI C,04H
 	   OUTER:
-		MOV B,C
-		MOV D,H
-		MOV E,L
-		PUSH H
-		MOV A,M
+	    	MOV B,C
 		INNER:
-			INX H
-			CMP M
-			JNC SKIP
 			MOV A,M
-			MOV D,H
-			MOV E,L
-			SKIP:
+			INX H
+			MOV E,M
+			CMP E
+			JC NO_SWAP
+			MOV M,A
+			DCX H
+			MOV M,E
+			INX H
+			NO_SWAP: 
 				DCR B
 				JNZ INNER
-		PUSH D
-		POP H
-		POP D
-		DCR C
 		LXI H,C050H
+		DCR C
 		JNZ OUTER
-					
 	   HLT
 
 # ORG C050
