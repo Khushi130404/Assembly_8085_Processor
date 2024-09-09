@@ -1,4 +1,3 @@
-false
 # BEGIN 0000H
 LXI H,C050
 MOV A,M
