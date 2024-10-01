@@ -1,4 +1,3 @@
-false
 MVI B,0FH
 MVI A,0FH
 MVI C,00H
