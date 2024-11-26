@@ -1,0 +1,23 @@
+	   LXI H,2700
+	   MVI C,09
+
+LOOP1:	   MOV B,C
+
+LOOP2:	   MOV A,M
+	   INX H
+	   MOV D,M
+	   CMP D
+	   JC NO_SWAP
+	   MOV M,A
+	   DCX H
+	   MOV M,D
+	   INX H
+
+NO_SWAP:	   DCR B
+	   JNZ LOOP2
+	   LXI H,2700
+	   DCR C
+	   JNZ LOOP1
+	   HLT
+# ORG 2700
+# DB 27H,ACH,10H,02H,A0H,11H,CCH,FFH,01H,20H

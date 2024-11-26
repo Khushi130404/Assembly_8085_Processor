@@ -1,4 +1,3 @@
-false
 	   LXI H,2700
 	   MVI A,00
 	   MVI B,00
