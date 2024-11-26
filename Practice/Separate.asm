@@ -1,4 +1,3 @@
-false
 MVI A,53H
 MOV B,A
 ANI 0FH
