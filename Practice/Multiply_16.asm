@@ -1,4 +1,3 @@
-false
 	   LXI H,0000
 	   MVI D,00
 	   MVI C,FF
