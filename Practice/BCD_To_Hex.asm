@@ -1,4 +1,3 @@
-true
 MVI A,23H
 CPI 10H
 JNC LOOP1
