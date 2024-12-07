@@ -1,0 +1,22 @@
+	   LXI H,2500
+	   LXI D,2600
+	   LXI B,2700
+	   MVI C,08H
+	   MVI A,00
+
+LOOP:	   LDAX D
+	   ADC M
+	   STAX B
+	   INX B
+	   INX H
+	   INX D
+	   DCR C
+	   JNZ LOOP
+	   MVI A,00
+	   ACI 00
+	   STAX B
+	   HLT
+# ORG 2500H
+# DB 55H,FFH, 57H, 1DH,66H,01H,03H,12H
+# ORG 2600H
+# DB 15H,F0H, A7H, 1BH,06H,11H,33H,C4H
