@@ -1,4 +1,3 @@
-false
 LXI H,2600
 LXI D,2700
 MVI C,08
