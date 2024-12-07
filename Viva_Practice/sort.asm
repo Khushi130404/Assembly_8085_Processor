@@ -1,4 +1,3 @@
-false
 LXI H,2700H
 MVI C,09H
 LOOP1:
