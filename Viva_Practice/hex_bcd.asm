@@ -1,4 +1,3 @@
-false
 MVI B,23H
 MVI A,00H
 LOOP:
