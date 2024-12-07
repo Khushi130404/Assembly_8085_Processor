@@ -1,4 +1,3 @@
-false
 LXI H,2700H
 MOV D,M
 MOV E,M
