@@ -48,3 +48,14 @@ MicroCode-8085 is a collection of 8085 assembly language programs designed as pa
 
 - Compares two numbers and determines which is greater or if they are equal.
 
+# How to Use
+
+1. Open the Jubin Mitraa 8085 Simulator.
+
+2. Load the desired assembly program.
+
+3. Assemble and execute the program.
+
+4. View the results in the registers or memory locations.
+
+
